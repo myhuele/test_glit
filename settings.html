@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Settings</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="left-side">
+
+    <div class="header-nav">
+        <a href="index.html" class="back" type="button" onclick="history.back()">&#8249; </a>
+        <a class="setting">Einstellungen</a>
+        <a href="index.html" class="logo"
+        ><img
+                src="https://cdn.glitch.com/a54d63e7-a420-4da8-b4b2-22485ba73265%2Flogo_icon.bmp?v=1591016016406"
+                alt="Das Logo unserer Mensa App"
+        /></a>
+    </div>
+
+    
+
+    <div class="dropdown">
+        <button onclick="meinMensaFunction()" class="dropbtn">Meine Mensa</button><br>
+            <div id="myDropdown" class="dropdown-content">
+                <select class="choice">
+                    <option>HTW Berlin Mensa</option>
+                    <option>TU Berlin Mensa</option>
+                    <option>Humbold Universität Mensa</option>
+                </select>
+            </div>
+    </div>
+
+    <div class="dropdown" >
+    <button onclick="meinBenachrichtungFunction()" class="dropbtn">Benachrichtungen</button><br>
+        <div id="myDropdown1" class="dropdown-content">
+            <a >Push-Benachrichtungen
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </a>
+            <a>Email
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label></a>
+            <a>SMS
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label></a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="meinModusFunction()" class="dropbtn">Dark Modus</button><br>
+        <div id="myDropdown2" class="dropdown-content">
+            <a>Ein/Aus
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label></a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="meinSpracheFunction()" class="dropbtn">Sprache</button>
+        <div id="myDropdown3" class="dropdown-content">
+            <select class="choice">
+                <option>English</option>
+                <option>Deutsch</option>
+                <option>Vietnamesisch</option>
+            </select>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

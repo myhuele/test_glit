@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Startseite</title>
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- SERVICE WORKER -->
+
+    <!-- NAVIGATIONSLEISTE -->
+
+    <nav class="header-nav">
+      <a id="menu" href="#" onclick="toggleSidebar()"
+        ><img
+          src="https://cdn.glitch.com/a54d63e7-a420-4da8-b4b2-22485ba73265%2Fmenu_icon.bmp?v=1591015987549"
+          alt="Das Menü Icon"
+      /></a>
+
+      <p>MENSA: HTW BERLIN</p>
+
+      <a href="index.html"
+        ><img
+          src="https://cdn.glitch.com/a54d63e7-a420-4da8-b4b2-22485ba73265%2Flogo_icon.bmp?v=1591016016406"
+          alt="Das Logo unserer Mensa App"
+      /></a>
+    </nav>
+
+    <!-- SIDEBAR -->
+
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()"
+        ><</a
+      >
+      <!-- TODO: Online Status -->
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="settings.html">Einstellungen</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- MAIN -->
+    <div class="Date">
+      <button class="changeDate" onclick="previousDay()">&#9664;</button>
+
+      <a id="Tag1"> </a>
+
+      <a id="Tag2"> </a>
+
+      <a id="Tag3"> </a>
+
+      <button id="previousDate" onclick="nextDay()">&#9654;</button>
+
+      <script>
+        today(); // Anwendung der Scripte
+      </script>
+    </div>
+
+    <div class="Food">
+      <h3 class="Us">
+        Speise
+      </h3>
+
+      <div class="Hauptspeise">
+        <div class="image">
+          foto
+        </div>
+        <div class="info">
+          <div class="name">
+            <h>
+              Pizza
+            </h>
+            <p>
+              Zutaten
+            </p>
+          </div>
+          <div class="price">
+            price
+          </div>
+        </div>
+      </div>
+
+      <h3 class="Us">
+        Dessert
+      </h3>
+
+      <div class="Dessert"></div>
+
+      <h3 class="Us">
+        Dessert
+      </h3>
+
+      <div class="Getränke"></div>
+    </div>
+  </body>
+</html>
